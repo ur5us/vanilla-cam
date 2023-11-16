@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+  <body>
+    <main id="app">
+      <video id="output"></video>
+      <select id="cams">
+        <option value="">Select a camera</option>
+      </select>
+      <fieldset id="delays" class="delays">
+        <legend>Delay in ms between stopping & starting cameras</legend>
+        <label>
+          <input type="radio" name="change-delay" value="0" />
+          0
+        </label>
+        <label>
+          <input type="radio" name="change-delay" value="50" />
+          50
+        </label>
+        <label>
+          <input type="radio" name="change-delay" value="100" />
+          100
+        </label>
+        <label>
+          <input type="radio" name="change-delay" value="250" checked />
+          250
+        </label>
+        <label>
+          <input type="radio" name="change-delay" value="500" />
+          500
+        </label>
+        <label>
+          <input type="radio" name="change-delay" value="1000" />
+          1000
+        </label>
+      </fieldset>
+      <div class="card">
+        <button id="start" type="button">Start</button>
+        <button id="stop" type="button">Stop</button>
+      </div>
+    </main>
+  </body>
+</html>
